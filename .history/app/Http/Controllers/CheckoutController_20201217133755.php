@@ -92,6 +92,7 @@ class CheckoutController extends Controller
         if(!$checkout)  {
             return redirect('/failed');
         }
+
         Session::forget('cart');
         Session::forget('user');
         Session::forget('order_id');
