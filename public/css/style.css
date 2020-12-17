@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:wght@600&display=swap');
+body {
+  font-family: 'Josefin Sans', sans-serif!important;
+}
+h1, h2, h4, h3, h5, h6  {
+  font-family: 'Playfair Display', serif!important;
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+#topbarsearch .input-field .prefix {
+            width:0rem !important;
+            }
+        #topbarsearch nav ul li:hover, nav ul li.active {
+                background-color: none !important;
+            }
+        .input-field .prefix ~ input, .input-field .prefix ~ textarea, .input-field .prefix ~ label, .input-field .prefix ~ .validate ~ label, .input-field .prefix ~ .autocomplete-content{
+            margin-left: 1rem !important;
+            }
+/* .parallax-container {
+      height: 90%;
+      } */
+.indicator {
+    background-color: #1a237e!important;
+}
