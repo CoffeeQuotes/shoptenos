@@ -24,7 +24,7 @@
 
       </div>
     </div>
-<div class="parallax"><img src="{{asset('img/hero.jpg')}}" alt="Teacher teaching in class room on white board" width="847" height="569"></div>
+<div class="parallax"><img src="{{asset('img/hero.jpg')}}" alt="Teacher teaching in class room on white board" width="847" height="568"></div>
   </div>
    <div class="container">
     <div class="section">

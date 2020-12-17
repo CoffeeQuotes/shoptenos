@@ -147,7 +147,7 @@ class ProductController extends Controller
           ];
           session()->put('cart', $cart);
           if($buy = 'buy') {
-            return redirect('/cart');
+            return redirect('/checkout');
           }
           return redirect()->back()->with('success', 'Product added to cart successfully!');
        }
@@ -156,7 +156,7 @@ class ProductController extends Controller
          $cart[$id]['quantity']++;
          session()->put('cart', $cart);
          if($buy = 'buy') {
-            return redirect('/cart');
+            return redirect('/checkout');
          }
          return redirect()->back()->with('success','Product added to cart successfully!');
        }
@@ -176,7 +176,7 @@ class ProductController extends Controller
        session()->put('cart', $cart);
 
        if($buy = 'buy') {
-        return redirect('/cart');
+        return redirect('/checkout');
        }
        return redirect()->back()->with('success','Product added to cart successfully');
     }

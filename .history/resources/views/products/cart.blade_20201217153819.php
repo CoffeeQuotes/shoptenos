@@ -48,9 +48,9 @@
               </tr>
             @endforeach
             @else
-            <div class="row center-align pt-2">
+            <div class="row center-align">
                 <img class="responsive-img" style="height: 220px!important;" src="{{asset('img/core/empty-cart.svg')}}"/>
-                <h3 class="grey-text">Your Cart is Empty & Sad! <span class="deep-orange-text">Add Some Stuff</span></h3>
+                <h3 class="grey-text">Your Cart is Empty !</h3>
             </div>
 
           @endif

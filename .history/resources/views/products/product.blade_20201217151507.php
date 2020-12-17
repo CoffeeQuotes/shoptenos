@@ -37,7 +37,7 @@
         </div>
         <div class="grp-buttons">
             <a href="{{ url('add-to-cart/'.$product->id) }}" class="waves-effect waves-light btn-large  blue darken-1 white-text"><i class="material-icons left">add_shopping_cart</i>Add to Cart</a>
-            <a href="{{ url('add-to-cart/'.$product->id.'/buy') }}" class="waves-effect waves-light btn-large  green darken-1"><i class="material-icons left">local_florist</i>Buy Now</a>
+            <a href="{{ url('add-to-cart/'.$product->id) }}" class="waves-effect waves-light btn-large  green darken-1"><i class="material-icons left">local_florist</i>Buy Now</a>
         </div>
         <div class="about-product flow-text">
             <h5 class="grey-text">About Product</h5>

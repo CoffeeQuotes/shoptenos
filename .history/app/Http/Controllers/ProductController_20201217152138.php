@@ -146,19 +146,19 @@ class ProductController extends Controller
             ]
           ];
           session()->put('cart', $cart);
-          if($buy = 'buy') {
-            return redirect('/cart');
+          if($buy = null) {
+            return redirect()->back()->with('success', 'Product added to cart successfully!');
           }
-          return redirect()->back()->with('success', 'Product added to cart successfully!');
+          return redirect('/checkout');
        }
 
        if(isset($cart[$id])) {
          $cart[$id]['quantity']++;
          session()->put('cart', $cart);
-         if($buy = 'buy') {
-            return redirect('/cart');
+         if($buy = null) {
+            return redirect()->back()->with('success','Product added to cart successfully!');
          }
-         return redirect()->back()->with('success','Product added to cart successfully!');
+         return redirect('/checkout');
        }
 
        $cart[$id] = [
@@ -175,9 +175,9 @@ class ProductController extends Controller
 
        session()->put('cart', $cart);
 
-       if($buy = 'buy') {
-        return redirect('/cart');
+       if($buy = null) {
+            return redirect()->back()->with('success','Product added to cart successfully');
        }
-       return redirect()->back()->with('success','Product added to cart successfully');
+       return redirect('/checkout');
     }
 }

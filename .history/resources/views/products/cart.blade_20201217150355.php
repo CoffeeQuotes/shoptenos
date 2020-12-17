@@ -47,12 +47,6 @@
                 </td>
               </tr>
             @endforeach
-            @else
-            <div class="row center-align pt-2">
-                <img class="responsive-img" style="height: 220px!important;" src="{{asset('img/core/empty-cart.svg')}}"/>
-                <h3 class="grey-text">Your Cart is Empty & Sad! <span class="deep-orange-text">Add Some Stuff</span></h3>
-            </div>
-
           @endif
         </tbody>
         <tfoot>
@@ -63,13 +57,11 @@
        </tr>
        </tfoot>
       </table>
-      @if (session('cart'))
       <div class="row">
           <div class="col s12 right-align">
             <a href="{{ url('/checkout') }}" class="btn waves-effect waves-light green darken-1"><i class="fa fa-angle-left"></i> Proceed to Checkout</a>
           </div>
       </div>
-      @endif
     </div>
 @section('scripts')
   <script type="text/javascript">
