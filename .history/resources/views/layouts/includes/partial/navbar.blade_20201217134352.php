@@ -36,8 +36,10 @@
   </nav>
 </div>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="/">Home</a></li>
+    <li><a href="sass.html">Sass</a></li>
     <li><a href="/products">Products</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
     <li><a class='dropdown-trigger btn' href='#' data-target='dropdown2'><i class="large material-icons">add_shopping_cart</i></a></li>
   </ul>
   <ul id='dropdown2' class='dropdown-content'>
