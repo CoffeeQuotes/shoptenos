@@ -32,7 +32,7 @@
                             <form action="{{ route('pay') }}" method="POST">
                                 <script
                                 src="https://checkout.razorpay.com/v1/checkout.js"
-                                data-key="rzp_test_UqewhpuY5Bmzxk"
+                                data-key="rzp_live_CsYsxq7OyyehDC"
                                 data-amount="{{Session::get('amount')}}"
                                 data-currency="INR"
                                 data-order_id="{{Session::get('order_id')}}"
