@@ -83,6 +83,7 @@
     </div>
     <script>
         $(".razorpay-payment-button").addClass("btn green accent  waves-effect waves-light btn-large");
+
     </script>
 
 </div>

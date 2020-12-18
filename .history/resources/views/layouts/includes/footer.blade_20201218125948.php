@@ -9,8 +9,8 @@
           <h5 class="white-text">Quick Links</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="https://tneos.in/page/who-we-are">About Tneos</a></li>
-            <li><a class="grey-text text-lighten-3" href="/refund">Cancellation & Refund Policy</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://tneos.in/privacypolicy">Privacy Policy</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Cancellation & Refund Policy</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
           </ul>
         </div>
       </div>

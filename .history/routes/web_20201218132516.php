@@ -18,7 +18,7 @@ use App\Product;
 */
 
 Route::get('/', function () {
-    $products = Product::orderBy('id', 'desc')->take(3)->get();
+    $products = Product::orderBy('id', 'desc')->take(4)->get();
     return view('welcome', compact('products'));
 });
 

@@ -44,9 +44,9 @@
                                 </script>
                             </form>
                         @endif
-                    {{-- <button class="btn green accent  waves-effect waves-light btn-large" type="submit" name="action"><i class="material-icons right">local_shipping
+                    <button class="btn green accent  waves-effect waves-light btn-large" type="submit" name="action"><i class="material-icons right">local_shipping
                     </i>Continue to Payment
-                      </button> --}}
+                      </button>
                     </form>
                 </div>
 
@@ -83,6 +83,7 @@
     </div>
     <script>
         $(".razorpay-payment-button").addClass("btn green accent  waves-effect waves-light btn-large");
+
     </script>
 
 </div>

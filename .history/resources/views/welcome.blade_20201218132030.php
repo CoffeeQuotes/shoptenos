@@ -80,7 +80,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">You can learn anything</h5>
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
       </div>
     </div>
@@ -96,14 +96,17 @@
           <h4>Featured Products</h4>
           <div class="row">
               @foreach ($products as $product)
-            <div class="col s12 m4">
+            <div class="col s12 m7">
               <div class="card">
                 <div class="card-image">
-                  <img src="{{ Voyager::image( $product->image_main ) }}" style="max-height: 220px;">
-                  <span class="card-title indigo darken-5 p-0 m-0 px-1">{{ $product->name }}</span>
+                  <img src="{{ Voyager::image( $product->image_main ) }}">
+                  <span class="card-title">{{ $product->name }}</span>
+                </div>
+                <div class="card-content">
+                  <p> {!! $product->description !!} </p>
                 </div>
                 <div class="card-action">
-                  <a  class="indigo-text" href="{{ url('add-to-cart/'.$product->id.'/buy') }}">Buy Now</a>
+                  <a href="{{ url('add-to-cart/'.$product->id.'/buy') }}">Buy Now</a>
                 </div>
               </div>
             </div>

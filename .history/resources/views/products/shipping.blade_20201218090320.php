@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
+    <style>
+        .pay {
+            color: white!important;
+        }
+    </style>
     <div class="row">
         <div class="col s12 m8">
             <h3>Tneos Products</h3>
@@ -82,7 +87,7 @@
         @endif
     </div>
     <script>
-        $(".razorpay-payment-button").addClass("btn green accent  waves-effect waves-light btn-large");
+        $(".razorpay-payment-button").addClass("btn green accent  waves-effect waves-light btn-large pay");
     </script>
 
 </div>

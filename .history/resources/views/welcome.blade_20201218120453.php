@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('page_title', 'Shop at Tneos')
 @section('content')
-<div id="index-banner" class="parallax-container" style="background-color: rgba(200,120,200,0.4);">
+<div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
@@ -15,10 +15,10 @@
             </div>
             </div>
         <div class="row center">
-          <h2 class="header light  amber-text"  style=" text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); letter-spacing:2px; padding-top: 12px; padding-bottom: 12px;">Education Resources</h2>
+          <h2 class="header col s12 light purple-text" style="letter-spacing:2px; background-color: rgba(0,0,0,0.6)">Education Resources</h2>
         </div>
         <div class="row center">
-          <a href="/products" id="download-button" class="z-depth-5 btn-large waves-effect waves-light" style="background-color: rgba(0,200,0,0.1);">Browse</a>
+          <a href="/products" id="download-button" class="btn-large waves-effect waves-light" style="background-color: rgba(255,255,255,0.1);">Browse</a>
         </div>
         <br><br>
 
@@ -80,7 +80,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">You can learn anything</h5>
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
       </div>
     </div>
@@ -93,22 +93,8 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Featured Products</h4>
-          <div class="row">
-              @foreach ($products as $product)
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="{{ Voyager::image( $product->image_main ) }}" style="max-height: 220px;">
-                  <span class="card-title indigo darken-5 p-0 m-0 px-1">{{ $product->name }}</span>
-                </div>
-                <div class="card-action">
-                  <a  class="indigo-text" href="{{ url('add-to-cart/'.$product->id.'/buy') }}">Buy Now</a>
-                </div>
-              </div>
-            </div>
-                @endforeach
-          </div>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
 
@@ -116,7 +102,7 @@
   </div>
 
 
-  {{-- <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -125,5 +111,5 @@
       </div>
     </div>
     <div class="parallax"><img src="{{asset('img/core/bg3.jpg')}}" alt="Unsplashed background img 3"></div>
-  </div> --}}
+  </div>
 @endsection

@@ -5,7 +5,6 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PaymentController;
-use App\Product;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +17,7 @@ use App\Product;
 */
 
 Route::get('/', function () {
-    $products = Product::orderBy('id', 'desc')->take(3)->get();
-    return view('welcome', compact('products'));
+    return view('welcome');
 });
 
 

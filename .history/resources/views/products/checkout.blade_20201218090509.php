@@ -54,7 +54,7 @@
                 <label>Country/Region</label>
             </div>
             <div class="input-field col s12 m4">
-                <select name="state" required class="validate">
+                <select name="state" required>
                   <option value="" disabled selected>Choose your option</option>
                   <option value="Andaman and Nicobar Islands" data-select2-id="12">Andaman and Nicobar Islands</option>
                   <option value="Andhra Pradesh" data-select2-id="13">Andhra Pradesh</option>
