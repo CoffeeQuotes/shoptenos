@@ -10,9 +10,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>@yield('page_title', setting('site.title') . " - " . setting('site.description'))</title>
 
-      <meta name="keywords" content="@yield('keywords',setting('site.meta_keywords'))" />
-      <meta name="description" content="{{setting('site.description')}}" />
-
       <meta property="og:title" content="@yield('page_title', setting('site.title') . " - " . setting('site.description'))" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="{{Request::fullUrl()}}" />
@@ -23,8 +20,6 @@
       <meta name="twitter:title" content="@yield('page_title', setting('site.title'))" />
       <meta name="twitter:description" content="@yield('page_title', setting('site.title') . " - " . setting('site.description'))" />
       <meta name="twitter:image" content="{{ url('/') }}/storage/{{setting('site.logo')}}"/>
-
-      <link rel="canonical" href="{{Request::Url()}}" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <link type="text/css" rel="stylesheet" href="css/style.css">

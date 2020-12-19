@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@section('page_title', ucfirst($product->name))
+@section('page_title', "{{ $product->name }}")
   <div class="container">
 
     <div class="row py-4">

@@ -10,9 +10,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>@yield('page_title', setting('site.title') . " - " . setting('site.description'))</title>
 
-      <meta name="keywords" content="@yield('keywords',setting('site.meta_keywords'))" />
-      <meta name="description" content="{{setting('site.description')}}" />
-
       <meta property="og:title" content="@yield('page_title', setting('site.title') . " - " . setting('site.description'))" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="{{Request::fullUrl()}}" />
